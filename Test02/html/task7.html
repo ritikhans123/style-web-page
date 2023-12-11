@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Complex CSS selectors */
+    .container > p {
+        text-align: left;
+      color: blue;
+    }
+
+    .box + div {
+      background-color:#ee90a2; 
+    }
+
+    .box ~ div {
+        text-align: left;
+      font-weight: bold;
+    }
+
+    /* Attribute selectors */
+    .special {
+        text-align: left;
+      color: red;
+    }
+
+    a[title] {
+      text-decoration: none;
+      text-align: center;
+      
+      border-bottom: 1px dashed #333;
+    }
+
+    input[type="text"] {
+      border: 2px solid blue;
+    }
+
+    img{
+      height: 50%;
+      width: 50%;
+    }
+  </style>
+  <title>Combined CSS Selectors</title>
+</head>
+<body>
+
+  <div class="container">
+    <p>This is a direct child paragraph.</p>
+    <p>This is another direct child paragraph.</p>
+  </div>
+
+  <div class="box"></div>
+
+  <div>This is the first sibling of .box.</div>
+  <div>This is the second sibling of .box.</div>
+  <div>This is the third sibling of .box.</div>
+
+  <p class="special">This paragraph has the special class.</p>
+
+  <a href="#" title="Click me">I have a title attribute</a>
+
+  <input type="text" placeholder="Type something"><br><br>
+
+  <img src="abcd.jpg.jpg" alt="Company Logo">
+
+</body>
+</html>
